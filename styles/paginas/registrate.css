@@ -20,12 +20,13 @@
 
 
 /* ****************BARRA DE BUSQUEDA. ******************** */
-    .barrasearch {
-        position: absolute;
-        left: 650px;
-        top: 90px;
+    form.barrasearch {
+        display: flex;
+        flex-direction: row;
+        left: 10%;
+        top: 120px;
     }
-    .barrasearch input {
+    form.barrasearch input {
         border-color: #ffffff;
         background-color: #353535;
         font-size: 20px;
@@ -33,7 +34,7 @@
         height: 40px;
         border-radius: 35px;
     }
-    .barrasearch button {
+    form.barrasearch button {
 
         background-color: #00000054;
         position: relative;
@@ -129,3 +130,134 @@ footer .pie td a:hover {
 footer h3 {
     background-color: #252525;
 }
+
+
+
+
+
+/*GRILLA MOBILE */
+@media screen and (max-width: 768px) and  (orientation:portrait) {
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "datos datos datos"
+        "formulario formulario formulario""
+        "footer footer footer";
+    }
+
+
+/*LOGO PAGINA*/
+header section.cabecera {
+width: 98%;
+margin: 0;
+}
+
+    header section.cabecera img.cabecera__logo {
+        position: sticky;
+        left: 5%;
+        width: 50%;
+        height: 30%;
+        margin: 2%;
+    }
+
+
+/*BOTONES SECUNDARIOS HEADER*/
+    header li#botonheader {
+        position: relative;
+        left: 70%;
+        bottom: 140px;
+        width: 1%;
+        height: 10px;
+        margin: 30px;
+        padding: 20px;
+        color: rgb(40, 114, 226);
+        align-items: center;
+        justify-content: center;
+    }
+
+        header li#botonheader button {
+            width: 4px;
+            
+        }
+
+        header li#botonheader button p {
+            font-size: 10px;
+        }
+
+/*BARRA DE BUSQUEDA*/
+    }
+    header form.barrasearch {
+        display: grid;
+        position: absolute;
+        margin: 15%;
+        left: 0%;
+        top: 12%;
+    }
+
+
+/*BOTONES NAVBAR*/
+    nav {
+        position: static;
+        bottom: 12%;
+        width: 94%;
+    }
+    nav.cabecera__nav {
+        position: static;
+        width: 91%;
+        }
+    nav.cabecera__nav ul{
+        width: 100%;
+    }
+
+    nav.cabecera__nav ul li{
+        position: relative;
+        margin: 1%;
+        bottom: 2px;
+        border-radius: 0.5px;
+        font-size: 18px;
+        font-weight: bold;
+        }
+
+        nav.cabecera__nav ul li a{
+            font-size: 14px;
+        }
+
+    h1.datos {
+        width: 100%;
+        height: 100%;
+        background-color: #252525;
+    }
+
+        /*PIE DE PAGINA*/
+    footer {
+        position: absolute;
+        top: 155%;
+        left: 0%;
+        width: 100%;
+        }
+
+
+        nav {
+            grid-area: nav;
+        }
+        header {
+            grid-area: header;
+        }
+        .datos {
+            grid-area: datos;
+        }
+        form.formulario{
+            grid-area: formulario;
+        }
+        footer {
+            grid-area: footer;
+        }
+        h1.datos {
+            grid-area: datos;
+        }
+        
+        form.formulario {
+            grid-area: formulario;
+        }

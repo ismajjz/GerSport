@@ -18,48 +18,49 @@
 <body>
 
 
-<!--**************** NAV **************-->
-        <header >
-
-
-<!--************** LOGO DE PAGINA **************-->
-        <section class="cabecera" >
-
-
-<!--LOGO PAGINA.-->
-            <img src="../agregados/img/Logobyn.png" class="cabecera__logo" width="350" height="180" alt="Logoweb">  
-
-
-<!--************** BOTONES HEADER **************-->
-            <a href="../paginas/registrate.html"><button type="button" > <img src="../agregados/img/index/iconos-nav/registrarse.png" height ="30" width="30" /><p>Registrarse</p></button>
-            <a href="../paginas/otros/favoritos.html"><button type="button"> <img src="../agregados/img/index/iconos-nav/favoritos.png" height ="30" width="30" /><p>Favoritos</p></button>
-            <a href="../paginas/otros/carrito.html"><button type="button"> <img src="../agregados/img/index/iconos-nav/carrito.png" height ="30" width="55" /><p>Carrito</p></button>
-        </section>
-        <br>
-
-
-<!--*****************BARRA DE NAVEGACION*********************-->
-            <nav class="cabecera__nav">
-             <ul>
-              <li> <a href="../index.html">Inicio</a> </li>
-              <li> <a href="./mujer.html">Mujer</a> </li>
-              <li> <a href="./hombre.html">Hombre</a> </li>
-              <li> <a href="./marcas.html">Marcas</a></li>
-              <li> <a href="./outlet.html">Outlet</a> </li>
-             </ul>
-           </nav>
-
-
-<!--************** BARRA DE BUSQUEDA ***************-->
-        <form class="barrasearch">
-          <input type="text" placeholder="Barra de busqueda">
-          <button type="button"><img src="../agregados/img/index/iconos-nav/search.png" width="30px"></button>
+    <header>
+        <section class="cabecera">
+          <!--LOGO PAGINA.-->
+          <img src="../agregados/img/Logobyn.png" class="cabecera__logo" width="350" height="180" alt="Logoweb">
+  
+          <!--************** BARRA DE BUSQUEDA ***************-->
+          <form class="barrasearch">
+            <input type="text" placeholder="Barra de busqueda">
+            <button type="button"><img src="../agregados/img/index/iconos-nav/search.png" class="icosearch" width="30px"></button>
           </form>
-        </header>
+  
+          <!--************** BOTONES HEADER **************-->
+          <li id="botonheader">
+          <a href="../paginas/registrate.html"><button type="button"> <img
+                src="../agregados/img/index/iconos-nav/registrarse.png" height="30" width="30" />
+              <p>Registrarse</p>
+            </button>
+            <a href="../paginas/otros/favoritos.html"><button type="button"> <img
+                  src="../agregados/img/index/iconos-nav/favoritos.png" height="30" width="30" />
+                <p>Favoritos</p>
+              </button>
+              <a href="../paginas/otros/carrito.html"><button type="button"> <img
+                    src="../agregados/img/index/iconos-nav/carrito.png" height="30" width="55" />
+                  <p>Carrito</p>
+                </button>
+              </li>
+        </section>
+      </header>
+          <!--*****************BARRA DE NAVEGACION*********************-->
+    <nav class="cabecera__nav">
+        <ul>
+          <li> <a href="index.html">Inicio</a> </li>
+          <li> <a href="./paginas/mujer.html">Mujer</a> </li>
+          <li> <a href="./paginas/hombre.html">Hombre</a> </li>
+          <li> <a href="./paginas/marcas.html">Marcas</a></li>
+          <li> <a href="./paginas/outlet.html">Outlet</a> </li>
+        </ul>
+      </nav>
+  
 <hr>
 <!-- Formulario -->
-    <h1>Ingresa tus datos</h1>
-    <form class=formulario>
+    <h1 class="datos">Ingresa tus datos</h1>
+    <form class="formulario">
         <br />
         <label for="Nombre">Nombre</label>
         <br />
@@ -108,6 +109,7 @@
         <br />
         <button class="boton" type="submit">Enviar</button>
         <button class="boton" type="reset">Restablecer</button>
+    </form>
         <hr />
 <!--PIE DE PAGINA-->
         <footer>
