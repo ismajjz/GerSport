@@ -58,7 +58,7 @@
 }
 
 .cabecera__nav ul {
-    background-image: linear-gradient(to top, #2C2C2C, rgb(40, 114, 226));
+    background-color: #000000;
     font-size: 30px;
     list-style-type: none;
     padding: 20px;
@@ -76,15 +76,20 @@
     font-size: 24;
     border-bottom: 04px solid; color: rgb(40, 114, 226) ;
 }
+.cabecera__nav ul li:hover {
+    transition: background-color 1s;
+    background-color: #000000;
+}
 
 .cabecera__nav ul li a {
-    background-color: rgb(40, 114, 226);
+    background-color: rgba(255, 255, 255, 0);
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
 .cabecera__nav ul li a:hover {
-    color: rgb(0, 0, 0);
+    transition: color 1s;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -162,6 +167,7 @@ div.galeria img {
 }
 
 div.galeria img:hover {
+    transition: width 2s;
     width: 150%;
     height: 150%;
     margin: -1%;
@@ -228,6 +234,7 @@ section.puma__oferta {
     transition: font-size 2s;
     font-size: 100px;
     color: rgb(40, 87, 141);
+    background-color: #000000;
     }
 
 

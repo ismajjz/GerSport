@@ -56,7 +56,7 @@
 }
 
 .cabecera__nav ul {
-    background-image: linear-gradient(to top, #2C2C2C, rgb(40, 114, 226));
+    background-color: #000000;
     font-size: 30px;
     list-style-type: none;
     padding: 20px;
