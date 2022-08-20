@@ -58,12 +58,12 @@
 }
 
 .cabecera__nav ul {
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top, #2C2C2C, rgb(40, 114, 226));
     font-size: 30px;
     list-style-type: none;
     padding: 20px;
     position: relative;
-    bottom:19px;
+    bottom: 20px;
     text-align: center;
 }
 
@@ -135,16 +135,19 @@
 
 /* *************GALERIA NIKE.*****************  */
 section#nike {
+    width: auto;
     margin: 1%;
     padding: 1%;
 }
 
 div.galeria {
    display: inline-block;
-   margin: 5%;
+   position: relative;
+   
+   margin: 1%;
    padding: 0;
    border: 1px solid rgb(199, 199, 199);
-   width: 200px;  
+   width: 220px;  
 }
 
 div.galeria:hover {
@@ -177,15 +180,14 @@ div.galeria__precio {
    font-weight: bolder;
    text-align: left;
 }
-div.seccion__nike {
+span.seccion__nike {
+    display: inline-block;
     border: 1px solid rgb(0, 0, 0);
     font-size: 30px;
     font-weight: bold;
    margin: 150px;
    width: 15%;
-   position: absolute;
-   left: 1550px;
-   top: 1400px;
+
    }
 
 
@@ -212,9 +214,19 @@ section.puma__oferta {
 }
 
 .puma__oferta p {
+    position: relative;
+    top: 180px;
+    font-size: 70px;
    color: #000000;
+   text-decoration: none;
 }
+.puma__oferta a { 
+    text-decoration: none;
+}
+
 .puma__oferta p:hover {
+    transition: font-size 2s;
+    font-size: 100px;
     color: rgb(40, 87, 141);
     }
 
@@ -242,7 +254,7 @@ footer h3 {
 }
 
 /*GRILLA MOBILE */
-@media screen and (min-width: 341px) and (max-width: 768px) and  (orientation:portrait) {
+@media screen and (min-width: 1px) and (max-width: 768px) and  (orientation:portrait) {
     #grilla {
         display: grid;
         grid-template-areas:
@@ -271,20 +283,17 @@ form {
     right: 180px;
 }
 
-header form.barrasearch img.icosearch {
-    z-index: 2;
-    position: relative;
-    right: 340px;
-    top: 45px;
-    display: none;
-}
 
 
 /*BOTONES SECUNDARIOS HEADER*/
-    header li#botonheader {
+    header ul#botonheader li {
         position: relative;
-        left: 70%;
-        bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        left: 75%;
+        bottom: 0px;
         width: 0%;
         height: 10px;
         margin: 30px;
@@ -364,7 +373,6 @@ div.seccion__nike {
 }
 
 div.galeria span.galeria__info {
-    position: block;
     position: relative;
     margin: 0%;
     padding: 0px;
@@ -375,10 +383,9 @@ div.galeria span.galeria__info {
 
 
 div.galeria span.precio {
-    display: block;
     position: relative;
-    left: 35%;
-    bottom: 15px;
+    right: 270px;
+    bottom: 0;
     font-weight: bolder;
     font-size: 16px;
     margin: 1%;
@@ -395,7 +402,7 @@ div.galeria span.precio {
      }
      section#offpuma img {
         overflow: hidden;
-        margin: 1%;
+        margin: 0%;
         display: block;
         width: 140%;
         height: 140%;
@@ -415,27 +422,7 @@ div.galeria span.precio {
 
     }
 
-/*GRILLA DESKTOP*/
-@media screen and (max-width: 1200px) and (orientation:landscape) {
-    #grilla {
-        display: grid;
-        grid-area:
-        "header header header header"
-        "nav nav nav nav"
-        "portada portada portada portada"
-        "nike nike nike nike"
-        "offpuma offpuma offpuma offpuma"
-        "footer footer footer footer";
-    }
-    .seccion__nike {
-        position: relative;
-        top: -20px;
-    }
-    footer {
-        position: fixed;
-        bottom: 0%;
-    }
-}
+    /*DECLARACIONES*/
 
 nav {
     grid-area: nav;
