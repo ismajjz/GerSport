@@ -231,12 +231,11 @@ nav.cabecera__nav ul {
 
 nav.cabecera__nav ul li{
     position: relative;
-    margin: 2%;
+    margin: 1%;
     padding: 1%;
-    font-size: 15px;
-    bottom: 4px;
+    bottom: 2px;
     border-radius: 0.5px;
-    font-size: 18px;
+    font-size: 15px;
     }
  .boton__reserva {
     
