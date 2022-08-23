@@ -7,89 +7,27 @@
 }
 
 
-/* ****************BARRA DE NAVEGACION.******************** */
-.cabecera {
-    background-color: rgb(40, 114, 226);
-}
-.cabecera button {
-    background-color: #00000000;
-        position: relative;
-        left: 80%;
-        bottom: 170px;
-        margin: 1%;
-        border: none;
-    }
+/*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
 
 
-/* ****************BARRA DE BUSQUEDA. ******************** */
-
-    .barrasearch input {
-        position: relative;
-        left: 40%;
-        top: 10%;
-        border-color: #ffffff;
-        background-color: #353535;
-        font-size: 20px;
-        width: 330px;
-        height: 40px;
-        border-radius: 35px;
-    }
-
-    .barrasearch button {
-        position: relative;
-        left: 36%;
-        top: 4px;
-        border-radius: 35px;
-        border-bottom: 01px;
- }
-
-
-
-/* **************LOGO PAGINA**************** */
-.cabecera__logo {
-    background-color: rgb(40, 114, 226);
+nav.navbar ul li a {
+    font-size: 20px;
+    margin: 30px;
+    color: #000000;
+    font-weight: bolder;
 }
 
-
-
-/* ****************BOTONES MENU DE NAVEGACION****************** */
-.cabecera__nav {
-    background-color: #ffffff;
+nav.navbar ul li a:hover {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+       rgba(0, 0, 0, 0.17) 0px 12px 13px,
+     rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.cabecera__nav ul {
-    background-color: #000000;
-    font-size: 30px;
-    list-style-type: none;
-    padding: 20px;
-    position: relative;
-    bottom: 20px;
-    text-align: center;
-}
-
-.cabecera__nav ul li {
-    display: inline;
-    margin: 50px;
-    padding: 6px;
-    background-color: rgb(40, 114, 226);
-    border-radius: 08px;
-    font-size: 24;
-    border-bottom: 04px solid; color: rgb(40, 114, 226) ;
-}
-.cabecera__nav ul li:hover {
-    transition: background-color 1s;
-    background-color: #000000;
-}
-
-.cabecera__nav ul li a {
-    background-color: rgba(255, 255, 255, 0);
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.cabecera__nav ul li a:hover {
-    transition: color 1s;
-    color: rgb(255, 255, 255);
+nav.navbar form {
+    width: 350px
 }
 
 
@@ -107,165 +45,189 @@
 }
 
 
-/* *****************PORTADA AFA.******************* */
-.portada__web {
-    position: relative;
-    bottom: 20px;
-    }
-
-
-
-
 /* ************ BOTON RESERVA DE PORTADA AFA. *************** */
-.boton__reserva {
-    background-color: rgb(40, 114, 226);
-    display: inline;
-    border-radius: 40px;
-    border-bottom: 02px solid; color: #222324;
-    padding: 20px;
-    position: relative;
-    left:78%;
-    bottom: 165px;
-    font-weight: bold;
-    color: #ffffff
-    }
+.portada .btnafa {
+    position: absolute;
+    top: 85%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .portada .btnafa:hover {
+    background-color: rgb(8, 114, 163);
+    color: white;
+  }
 
-.boton__reserva:hover{
-    background-color: #ffffff;
-    color: black;
-    border-color: #28578d;
-    border-bottom: 02px solid; color: #000000;
-}
-
-
-/* *************GALERIA NIKE.*****************  */
-section#nike {
-    width: auto;
-    margin: 1%;
-    padding: 1%;
-}
-
-div.galeria {
-   display: inline-block;
-   position: relative;
+   /*  **************GALERIA NIKE.***************  */
+   h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 2%;
+    text-align: center;
+  }
    
-   margin: 1%;
-   padding: 0;
-   border: 1px solid rgb(199, 199, 199);
-   width: 220px;  
+div.GalleryA {
+  border: 1px solid #ccc;
 }
 
-div.galeria:hover {
-  border: 2px solid rgb(0, 0, 0);
+div.GalleryA:hover {
+  border: 1px solid #777;
+  background-color: rgba(32, 32, 32, 0.438);
 }
 
-div.galeria img {
-   width: 98%;
-   left: 10px;
-   height: auto;
-   margin: 1%;
+div.GalleryA img {
+  width: 100%;
+  height: auto;
 }
 
-div.galeria img:hover {
-    transition: width 2s;
-    width: 150%;
-    height: 150%;
-    margin: -1%;
+div.descA {
+  padding: 15px;
+  text-align: center;
 }
 
-
-span.galeria__info {
-    overflow: hidden;
-    margin: 10%;
-    padding: 10%;
-   text-align: left;
+* {
+  box-sizing: border-box;
 }
 
-div.galeria__precio {
-   position: relative;
-   font-weight: bolder;
-   text-align: left;
+.NikeResponsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
 }
-span.seccion__nike {
-    display: inline-block;
-    border: 1px solid rgb(0, 0, 0);
-    font-size: 30px;
-    font-weight: bold;
-   margin: 150px;
-   width: 15%;
-
-   }
 
 
    /*  **************SECCION PUMA.***************  */
-section.puma {
-        display: inline-block;
-        position: relative;
-        left: 30%;
-        margin: 150px;
-        border: 1px solid rgb(199, 199, 199);
-        width: 200px;
-} 
+  h1 {
+    padding: 2%;
+    text-align: center;
+  }
+  div.GalleryB {
+    border: 1px solid #ccc;
+  }
+  
+  div.GalleryB:hover {
+    border: 1px solid #777;
+  }
+  
+  div.GalleryB img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.descB {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .OutResponsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
 
 
-/* *****************TEXTO SECCION PUMA************* */
-section.puma__oferta {
-    font-size: 60px;
-    font-weight: bold;
-   margin: 60px;
-   width: 13%;
-   position: absolute;
-   left: 250px;
-   top: 189%;
+/******************PIE DE PAGINA******************/
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(40, 87, 141);
 }
-
-.puma__oferta p {
-    position: relative;
-    top: 180px;
-    font-size: 70px;
-   color: #000000;
-   text-decoration: none;
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
 }
-.puma__oferta a { 
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
     text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(40, 87, 141);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: rgb(40, 87, 141);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
 }
 
-.puma__oferta p:hover {
-    transition: font-size 2s;
-    font-size: 100px;
-    color: rgb(40, 87, 141);
-    background-color: #000000;
+
+
+
+    /*DECLARACIONES*/
+
+    nav {
+        grid-area: nav;
+    }
+    #portada {
+        grid-area: portada;
+    }
+    #nike {
+        grid-area: nike;
+    }
+    #offpuma {
+        grid-area: offpuma;
+    }
+    footer {
+        grid-area: footer;
     }
 
 
 
-/* ******************PIE DE PAGINA.********************* */
-footer {
-    position: absolute;
-    width: 100%;
-    font-size: 20px;
-    background-color: #252525;
-}
 
-footer .pie td a {
-    text-decoration: none;
-    color: #ffffff;
-}
 
-footer .pie td a:hover {
-    color: rgb(0, 0, 0);
-}
-
-footer h3 {
-    background-color: #252525;
-}
 
 /*GRILLA MOBILE */
-@media screen and (min-width: 1px) and (max-width: 768px) and  (orientation:portrait) {
+@media screen  and (min-width: 50px) and (max-width: 768px) and  (orientation:portrait) {
     #grilla {
         display: grid;
         grid-template-areas:
-        "header header header"
         "nav nav nav"
         "portada portada portada"
         "nike nike nike"
@@ -273,179 +235,62 @@ footer h3 {
         "footer footer footer";
     }
 
+/*NAVBAR*/
 
-/*LOGO PAGINA*/
-    header section.cabecera img.cabecera__logo {
-        background-color: #00000000;
-        position: sticky;
-        left: 5%;
-        width: 50%;
-        height: 30%;
-        margin: 2%;
-    }
 
-/*BARRA DE BUSQUEDA*/
-form {
+nav.navbar {
     position: relative;
-    right: 180px;
+    width: 100%;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+nav.navbar ul li a {
+    color: #000000;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 
-
-/*BOTONES SECUNDARIOS HEADER*/
-    header ul#botonheader li {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: center;
-        left: 75%;
-        bottom: 0px;
-        width: 0%;
-        height: 10px;
-        margin: 30px;
-        padding: 20px;
-        color: rgb(40, 114, 226);
-    }
-
-
-/*BOTONES NAVBAR*/
-    nav {
-        position: relative;
-        width: 100%;
-        bottom: 54%;
-    }
-    nav.cabecera__nav {
-        position: relative;
-        width: 100%;
-        }
-
-    nav.cabecera__nav ul li{
-        position: relative;
-        margin: 2%;
-        padding: 1%;
-        font-size: 15px;
-        bottom: 4px;
-        border-radius: 0.5px;
-        font-size: 18px;
-        }
-     .boton__reserva {
-        
-         font-weight: bold;
-        }
-
-/*PORTADA AFA*/        
-        div#portada .boton__reserva {
-            
-            position: relative;
-            bottom: 75px;
-            left: 75%;
-            font-size: 8px;
-            border-style: none;
-            width: 10%;
-            height: 2%;
-            } 
-
-
-        div#portada h4.info__extra {
-            position: relative;
-            text-align: center;
-            font-size: 14px;
-            bottom: 21%;
-            }
-
-            section#nike {
-            position: relative;
-            bottom: 0%;
-            margin: 0;
-            padding: 0;
-            width: 600px;
-            overflow-x: auto;
-            background-color: ddd;  
-            }
-
-/*GALERIA NIKE*/
-section#nike {
-    position: relative;
-    margin: 5px;
-    white-space: nowrap;
-    overflow: auto;
-}
-section#nike img {
-    overflow: hidden;
-}
-
-div.seccion__nike {
-    display: none;
-}
-
-div.galeria span.galeria__info {
-    position: relative;
-    margin: 0%;
-    padding: 0px;
-    right: 90%;
-    bottom: 20px;
-    font-size: 14px;
-}
-
-
-div.galeria span.precio {
-    position: relative;
-    right: 270px;
-    bottom: 0;
+/*PORTADA AFA*/
+.portada .btnafa {
+    width: 10px;
+    height: 10px;
     font-weight: bolder;
-    font-size: 16px;
-    margin: 1%;
-            }
-
-/*GALERIA PUMA*/
-     section#offpuma {
-        position: relative;
-        bottom: 10%;
-        margin: 1%;
-        white-space: nowrap;
-        overflow-x: auto;
-        background-color: ddd;
-     }
-     section#offpuma img {
-        overflow: hidden;
-        margin: 0%;
-        display: block;
-        width: 140%;
-        height: 140%;
-     }
-     section#offpuma p {
-        display: none;
-     }
+    position: relative;
+    bottom: 20px;
+    left: 80%;
+}
+div.portada h4.info__extra {
+    font-size: 15px;
+}       
 
 
-/*PIE DE PAGINA*/
-    footer {
-    position: static;
-    top: 100%;
-    left: 0%;
-    width: 98%;
-    }
+/*NIKE*/
+.NikeResponsive {
+    padding: 35px 0px;
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 
-    }
+  
+/*OUTLET*/
+.OutResponsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 
-    /*DECLARACIONES*/
 
-nav {
-    grid-area: nav;
+.pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
 }
-header {
-    grid-area: header;
 }
-#portada {
-    grid-area: portada;
-}
-#nike {
-    grid-area: nike;
-}
-#offpuma {
-    grid-area: offpuma;
-}
-footer {
-    grid-area: footer;
-}
+
+
