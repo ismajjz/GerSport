@@ -1,0 +1,228 @@
+/*GRILLA MOBILE */
+@media screen and (min-width: 769x) and (max-width: 2000px) and (orientation:lanscape) {
+    #grilla {
+        display: grid;
+        grid-template-areas:
+            "nav nav nav"
+            "portada portada portada"
+            "nike nike nike"
+            "offpuma offpuma offpuma"
+            "footer footer footer";
+    }
+
+    /*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+    div.container-fluid {
+        background-color: $color-general-pagina;
+    }
+
+    nav.navbar ul li a {
+        font-size: 20px;
+        margin: 30px;
+        color: $color-fuente-navfooter;
+        font-weight: $formato-texto;
+    }
+
+    nav.navbar ul li a:hover {
+        border-radius: 15px;
+        background: $color-botones;
+    }
+
+    nav.navbar form {
+        width: 350px
+    }
+
+    /* ************ BOTON RESERVA DE PORTADA AFA. *************** */
+    .portada .btnafa {
+        position: relative;
+        bottom: 120px;
+        left: 81%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: $formato-texto;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .portada .btnafa:hover {
+        background: $color-botones;
+        color: white;
+    }
+
+    /* ************INFORMACION DE CUOTAS.******************* */
+    .info__extra {
+        font-weight: $formato-texto;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        padding: 15px;
+        position: relative;
+        bottom: 100px;
+        left: 0px;
+
+    }
+
+    /*  **************GALERIA NIKE.***************  */
+    h2 {
+        font-size: $fuentes-galerias;
+        font-weight: $formato-texto;
+        font-weight: $formato-texto;
+        padding: 2%;
+        text-align: center;
+    }
+
+    h2:hover {
+        transition: background-color 2s;
+        background-color: $color-general-pagina;
+        color: $color-fuente-navfooter;
+    }
+
+
+    div.GalleryA {
+        border: $bordescajas1;
+    }
+
+    div.GalleryA:hover {
+        border: $bordescajas2;
+        background: linear-gradient(90deg, #7587b369 0%, #124bbe8c 100%);
+        transition: font-size 2s;
+        font-size: $fuentes-galerias;
+        font-weight: $formato-texto;
+    }
+
+    div.GalleryA img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.descA {
+        padding: 15px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .NikeResponsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+
+    /*  **************SECCION OUTLET.***************  */
+    h1 {
+        padding: 2%;
+        text-align: center;
+    }
+
+    h1:hover {
+        transition: background-color 2s;
+        background-color: $color-general-pagina;
+        color: #efefef;
+        font-weight: $formato-texto;
+    }
+
+    div.GalleryB {
+        border: $bordescajas1;
+    }
+
+    div.GalleryB:hover {
+        font-weight: $formato-texto;
+        border: $bordescajas2;
+    }
+
+    div.GalleryB img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.descB {
+        padding: 15px;
+        text-align: center;
+        font-size: $fuentes-galerias;
+    }
+
+
+    .OutResponsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+
+    /******************PIE DE PAGINA******************/
+    .pie-pagina {
+        width: 100%;
+        background-color: $color-general-pagina;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+
+    .pie-pagina .grupo-1 .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pie-pagina .grupo-1 .box figure img {
+        width: 250px;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        text-align: start;
+        color: $color-fuente-navfooter;
+        margin-bottom: 25px;
+        font-size: $fuentes-galerias;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        color: $color-fuente-navfooter;
+        margin-bottom: 10px;
+    }
+
+    .pie-pagina .grupo-1 .red-social a {
+        display: inline;
+        padding: 20px;
+        justify-content: end;
+        text-decoration: none;
+        width: 70px;
+        height: 65px;
+        line-height: 45px;
+        color: $color-fuente-navfooter;
+        margin-right: 10px;
+        background-color: $color-general-pagina;
+        text-align: center;
+        transition: all 300ms ease;
+    }
+
+    .pie-pagina .grupo-1 .red-social a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .pie-pagina .grupo-2 {
+        background-color: $color-general-pagina;
+        padding: 15px 10px;
+        text-align: center;
+        color: $color-fuente-navfooter;
+    }
+
+    .pie-pagina .grupo-2 small {
+        font-size: $fuentes-galerias;
+    }
+}

@@ -1,0 +1,38 @@
+ /*  **************SECCION OUTLET.***************  */
+ h1 {
+    padding: 2%;
+    text-align: center;
+  }
+  h1:hover {
+    transition: background-color 2s;
+    background-color: $color-general-pagina;
+    color: #efefef;
+    font-weight: $formato-texto;
+  }
+
+  div.GalleryB {
+    border: $bordescajas1;
+
+    img {
+        width: 100%;
+        height: auto;
+      }
+  }
+  
+  div.GalleryB:hover {
+    font-weight: $formato-texto;
+    border: $bordescajas2;
+  }
+  
+  div.descB {
+    padding: 15px;
+    text-align: center;
+    font-size: $fuentes-galerias;
+  }
+  
+  
+  .OutResponsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  } 

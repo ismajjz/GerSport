@@ -1,0 +1,46 @@
+ /*  **************GALERIA NIKE.***************  */
+ h2 {
+    font-size: $fuentes-galerias;
+    font-weight: $formato-texto;
+    font-weight: $formato-texto;
+    padding: 2%;
+    text-align: center;
+  }
+  h2:hover {
+    transition: background-color 2s;
+    background-color: $color-general-pagina;
+    color: $color-fuente-navfooter;
+  }
+  
+   
+div.GalleryA {
+  border: $bordescajas1;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+div.GalleryA:hover {
+  border: $bordescajas2;
+  background: linear-gradient(90deg, #7587b369 0%, #124bbe8c 100%);
+  transition: font-size 2s;
+  font-size: $fuentes-galerias;
+  font-weight: $formato-texto;
+}
+
+div.descA {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.NikeResponsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}

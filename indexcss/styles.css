@@ -1,0 +1,478 @@
+/************************ General ***************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+/*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+div.container-fluid {
+  background-color: rgb(0, 108, 248);
+}
+
+nav.navbar ul li a {
+  font-size: 20px;
+  margin: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+nav.navbar ul li a:hover {
+  border-radius: 15px;
+  background: linear-gradient(90deg, #8a9ecc 0%, #0043a7 100%);
+}
+
+nav.navbar form {
+  width: 350px;
+}
+
+/* ************ BOTON RESERVA DE PORTADA AFA. *************** */
+.portada .btnafa {
+  position: relative;
+  bottom: 120px;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.portada .btnafa:hover {
+  background: linear-gradient(90deg, #8a9ecc 0%, #0043a7 100%);
+  color: white;
+}
+
+/* ************INFORMACION DE CUOTAS.******************* */
+.info__extra {
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  position: relative;
+  bottom: 100px;
+  left: 0px;
+}
+
+/*  **************GALERIA NIKE.***************  */
+h2 {
+  font-size: 20px;
+  font-weight: bolder;
+  font-weight: bolder;
+  padding: 2%;
+  text-align: center;
+}
+
+h2:hover {
+  transition: background-color 2s;
+  background-color: rgb(0, 108, 248);
+  color: rgb(0, 0, 0);
+}
+
+div.GalleryA {
+  border: 1px solid rgba(0, 70, 150, 0.342);
+}
+div.GalleryA img {
+  width: 100%;
+  height: auto;
+}
+
+div.GalleryA:hover {
+  border: 1.5px solid rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(117, 135, 179, 0.4117647059) 0%, rgba(18, 75, 190, 0.5490196078) 100%);
+  transition: font-size 2s;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+div.descA {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.NikeResponsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+/*  **************SECCION OUTLET.***************  */
+h1 {
+  padding: 2%;
+  text-align: center;
+}
+
+h1:hover {
+  transition: background-color 2s;
+  background-color: rgb(0, 108, 248);
+  color: #efefef;
+  font-weight: bolder;
+}
+
+div.GalleryB {
+  border: 1px solid rgba(0, 70, 150, 0.342);
+}
+div.GalleryB img {
+  width: 100%;
+  height: auto;
+}
+
+div.GalleryB:hover {
+  font-weight: bolder;
+  border: 1.5px solid rgb(0, 0, 0);
+}
+
+div.descB {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.OutResponsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+/******************PIE DE PAGINA******************/
+.pie-pagina {
+  width: 100%;
+  background-color: rgb(0, 108, 248);
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 h2 {
+  text-align: start;
+  color: rgb(0, 0, 0);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 p {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline;
+  padding: 20px;
+  justify-content: end;
+  text-decoration: none;
+  width: 70px;
+  height: 65px;
+  line-height: 45px;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color: rgb(0, 108, 248);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 :hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.pie-pagina .grupo-2 {
+  background-color: rgb(0, 108, 248);
+  padding: 15px 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.pie-pagina .grupo-2 small {
+  font-size: 20px;
+}
+
+/*DECLARACIONES*/
+nav {
+  grid-area: nav;
+}
+
+#portada {
+  grid-area: portada;
+}
+
+#nike {
+  grid-area: nike;
+}
+
+#offpuma {
+  grid-area: offpuma;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*GRILLA MOBILE */
+@media screen and (min-width: 50px) and (max-width: 768px) and (orientation: portrait) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "nav nav nav" "portada portada portada" "nike nike nike" "offpuma offpuma offpuma" "footer footer footer";
+  }
+  /*NAVBAR*/
+  nav.navbar {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav.navbar ul li a {
+    color: #000000;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  /*PORTADA AFA*/
+  .portada .btnafa {
+    width: 10px;
+    height: 10px;
+    font-weight: bolder;
+    position: relative;
+    bottom: 20px;
+    left: 80%;
+  }
+  div.portada h4.info__extra {
+    font-size: 15px;
+  }
+  /*NIKE*/
+  .NikeResponsive {
+    padding: 35px 0px;
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  /*OUTLET*/
+  .OutResponsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  /*FOOTER*/
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 15px;
+  }
+}
+/*GRILLA MOBILE */
+@media screen and (min-width: 769x) and (max-width: 2000px) and (orientation: lanscape) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "nav nav nav" "portada portada portada" "nike nike nike" "offpuma offpuma offpuma" "footer footer footer";
+  }
+  /*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+  div.container-fluid {
+    background-color: rgb(0, 108, 248);
+  }
+  nav.navbar ul li a {
+    font-size: 20px;
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+  nav.navbar ul li a:hover {
+    border-radius: 15px;
+    background: linear-gradient(90deg, #8a9ecc 0%, #0043a7 100%);
+  }
+  nav.navbar form {
+    width: 350px;
+  }
+  /* ************ BOTON RESERVA DE PORTADA AFA. *************** */
+  .portada .btnafa {
+    position: relative;
+    bottom: 120px;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .portada .btnafa:hover {
+    background: linear-gradient(90deg, #8a9ecc 0%, #0043a7 100%);
+    color: white;
+  }
+  /* ************INFORMACION DE CUOTAS.******************* */
+  .info__extra {
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    position: relative;
+    bottom: 100px;
+    left: 0px;
+  }
+  /*  **************GALERIA NIKE.***************  */
+  h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    font-weight: bolder;
+    padding: 2%;
+    text-align: center;
+  }
+  h2:hover {
+    transition: background-color 2s;
+    background-color: rgb(0, 108, 248);
+    color: rgb(0, 0, 0);
+  }
+  div.GalleryA {
+    border: 1px solid rgba(0, 70, 150, 0.342);
+  }
+  div.GalleryA:hover {
+    border: 1.5px solid rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(117, 135, 179, 0.4117647059) 0%, rgba(18, 75, 190, 0.5490196078) 100%);
+    transition: font-size 2s;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  div.GalleryA img {
+    width: 100%;
+    height: auto;
+  }
+  div.descA {
+    padding: 15px;
+    text-align: center;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .NikeResponsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  /*  **************SECCION OUTLET.***************  */
+  h1 {
+    padding: 2%;
+    text-align: center;
+  }
+  h1:hover {
+    transition: background-color 2s;
+    background-color: rgb(0, 108, 248);
+    color: #efefef;
+    font-weight: bolder;
+  }
+  div.GalleryB {
+    border: 1px solid rgba(0, 70, 150, 0.342);
+  }
+  div.GalleryB:hover {
+    font-weight: bolder;
+    border: 1.5px solid rgb(0, 0, 0);
+  }
+  div.GalleryB img {
+    width: 100%;
+    height: auto;
+  }
+  div.descB {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .OutResponsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  /******************PIE DE PAGINA******************/
+  .pie-pagina {
+    width: 100%;
+    background-color: rgb(0, 108, 248);
+  }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+  }
+  .pie-pagina .grupo-1 .box h2 {
+    text-align: start;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .red-social a {
+    display: inline;
+    padding: 20px;
+    justify-content: end;
+    text-decoration: none;
+    width: 70px;
+    height: 65px;
+    line-height: 45px;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    background-color: rgb(0, 108, 248);
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  .pie-pagina .grupo-2 {
+    background-color: rgb(0, 108, 248);
+    padding: 15px 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
