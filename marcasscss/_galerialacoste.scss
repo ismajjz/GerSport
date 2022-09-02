@@ -1,0 +1,9 @@
+   /*Galeria Lacoste*/
+   .seccion-lacoste{
+    align-items: $alineacion-galerias;
+    background-color: $color-fondo-galeria1;
+    display: flex;
+    min-height: 100%;
+    justify-content: $alineacion-contenido-galerias;
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }
