@@ -1,0 +1,218 @@
+/************************ HEADER ***************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+
+/*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+div.container-fluid {
+  background-color: rgb(0, 108, 248);
+}
+
+nav.navbar ul li a {
+  font-size: 20px;
+  margin: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+nav.navbar ul li a:hover {
+  border-radius: 15px;
+  background: linear-gradient(90deg, #8a9ecc 0%, #0043a7 100%);
+}
+
+nav.navbar form {
+  width: 350px;
+}
+
+.grid {
+  background-color: rgb(255, 180, 192);
+  border-color: rgb(78, 78, 78);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  align-items: stretch;
+  margin: 10px;
+}
+
+.grid > article {
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid .text h3 {
+  font-size: 1.4rem;
+}
+
+.grid .text p {
+  font-size: 0.9rem;
+}
+
+.grid .text p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+p.encabezado {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 3%;
+}
+
+a.btn {
+  display: inline-block;
+  background-color: rgb(255, 131, 152);
+  border-color: rgb(46, 46, 46);
+}
+
+a.btn:hover {
+  background-color: rgb(255, 72, 102);
+  border-color: black;
+}
+
+a.btn::before {
+  background-color: rgb(59, 59, 59);
+  border-color: black;
+}
+
+a.btn:after {
+  background-color: rgb(59, 59, 59);
+  border-color: black;
+}
+
+/******************PIE DE PAGINA******************/
+.pie-pagina {
+  width: 100%;
+  background-color: rgb(0, 108, 248);
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 h2 {
+  text-align: start;
+  color: rgb(0, 0, 0);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 p {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline;
+  padding: 20px;
+  justify-content: end;
+  text-decoration: none;
+  width: 70px;
+  height: 65px;
+  line-height: 45px;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color: rgb(0, 108, 248);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 :hover {
+  color: rgb(255, 255, 255);
+}
+
+.pie-pagina .grupo-2 {
+  background-color: rgb(0, 108, 248);
+  padding: 15px 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.pie-pagina .grupo-2 small {
+  font-size: 20px;
+}
+
+/*GRILLA MOBILE */
+@media screen and (min-width: 50px) and (max-width: 768px) and (orientation: portrait) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "nav nav nav" "babuchas babuchas babuchas" "calzas calzas calzas" "camperas camperas camperas" "buzos buzos buzos" "footer footer footer";
+  }
+  /*navbar*/
+  nav.navbar {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav.navbar ul li a {
+    color: #000000;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  /*galeria marcas*/
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*FOOTER*/
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 2000px) and (orientation: landscape) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.darkmode--activated p, .darkmode--activated li {
+  color: #000;
+}
+
+.button {
+  isolation: isolate;
+}
+
+.darkmode--activated .logo {
+  mix-blend-mode: difference;
+}
+
+/*# sourceMappingURL=stylemujer.css.map */

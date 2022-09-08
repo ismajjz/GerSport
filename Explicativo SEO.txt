@@ -1,0 +1,10 @@
+Aplique SEO en todas las secciones con las siguientes caracteristicas:
+
+Meta description: Considerando que mi pagina web esta enfocada en la venta de indumentaria deportiva, explique
+ese proposito y algunas ventajas que se tendrian a la hora de utilizarla como por ejemplo, mejores precios y 
+una mayor calidad en los productos.
+
+Meta keywords: designe las palabras claves de lo que ofrezco en mi pagina web, en este caso indumentaria deportiva:
+algunas de las palabras claves son: Indumentaria, deportiva, futbol, running, basket, calzas, entre otras.
+
+Title: Para el encabezado de la pagina utilice el nombre de mi emprendimiento "GerSport".

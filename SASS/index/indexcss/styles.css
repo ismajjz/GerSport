@@ -1,0 +1,703 @@
+/************************ HEADER ***************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+
+/*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+div.container-fluid {
+  background-color: rgb(0, 108, 248);
+}
+
+nav.navbar ul li a {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+nav.navbar ul li a:hover {
+  border-radius: 15px;
+  background: linear-gradient(90deg, #879dd1 0%, #0043a7 100%);
+}
+
+nav.navbar form {
+  width: 350px;
+}
+
+/* ************ BOTON RESERVA DE PORTADA AFA. *************** */
+.portada .botonafa {
+  position: relative;
+  bottom: 120px;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.portada .botonafa:hover {
+  transition: 2s;
+  background: linear-gradient(90deg, #879dd1 0%, #0043a7 100%);
+  color: white;
+}
+
+/* ************INFORMACION DE CUOTAS.******************* */
+.info__extra {
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  position: relative;
+  bottom: 100px;
+  left: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid .text h3 {
+  font-size: 1.4rem;
+}
+
+.grid .text p {
+  font-size: 0.9rem;
+}
+
+.grid .text p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+/*  **************SECCION OUTLET.***************  */
+h1 {
+  padding: 2%;
+  text-align: center;
+}
+
+h1:hover {
+  transition: background-color 2s;
+  background-color: rgb(0, 108, 248);
+  color: #efefef;
+  font-weight: bolder;
+}
+
+div.GalleryB {
+  border: 1px solid rgba(0, 70, 150, 0.342);
+}
+div.GalleryB img {
+  width: 100%;
+  height: auto;
+}
+
+div.GalleryB:hover {
+  font-weight: bolder;
+  border: 1.5px solid rgb(0, 0, 0);
+}
+
+div.descB {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.OutResponsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+/******************PIE DE PAGINA******************/
+.pie-pagina {
+  width: 100%;
+  background-color: rgb(0, 108, 248);
+}
+
+.pie-pagina .grupo-1 {
+  background-color: rgb(0, 108, 248);
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  background-color: rgb(0, 108, 248);
+}
+.pie-pagina .grupo-1 img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 p {
+  text-align: start;
+  color: rgb(0, 0, 0);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 p {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline;
+  padding: 20px;
+  justify-content: end;
+  text-decoration: none;
+  width: 70px;
+  height: 65px;
+  line-height: 45px;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color: rgb(0, 108, 248);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 :hover {
+  color: rgb(255, 255, 255);
+}
+
+.pie-pagina .grupo-2 {
+  width: 100%;
+  background-color: rgb(0, 108, 248);
+  padding: 15px 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.pie-pagina .grupo-2 small {
+  font-size: 20px;
+}
+
+/*DECLARACIONES*/
+nav {
+  grid-area: nav;
+}
+
+#portada {
+  grid-area: portada;
+}
+
+#nike {
+  grid-area: nike;
+}
+
+#offpuma {
+  grid-area: offpuma;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*GRILLA MOBILE */
+@media screen and (min-width: 50px) and (max-width: 768px) and (orientation: portrait) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "nav nav nav" "portada portada portada" "nike nike nike" "offpuma offpuma offpuma" "footer footer footer";
+  }
+  /*NAVBAR*/
+  nav.navbar {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav.navbar ul li a {
+    color: #000000;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  /*PORTADA AFA*/
+  .portada .btnafa {
+    width: 10px;
+    height: 10px;
+    font-weight: bolder;
+    position: relative;
+    bottom: 20px;
+    left: 80%;
+  }
+  div.portada h4.info__extra {
+    font-size: 15px;
+  }
+  /*NIKE*/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    align-items: stretch;
+  }
+  .grid > article {
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  .grid > article img {
+    max-width: 100%;
+  }
+  /*OUTLET*/
+  .OutResponsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  /*FOOTER*/
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 15px;
+  }
+}
+/*GRILLA MOBILE */
+@media screen and (min-width: 769x) and (max-width: 2000px) and (orientation: lanscape) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "nav nav nav" "portada portada portada" "nike nike nike" "offpuma offpuma offpuma" "footer footer footer";
+  }
+  /*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+  div.container-fluid {
+    background-color: rgb(0, 108, 248);
+  }
+  nav.navbar ul li a {
+    font-size: 20px;
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+  nav.navbar ul li a:hover {
+    border-radius: 15px;
+    background: linear-gradient(90deg, #879dd1 0%, #0043a7 100%);
+  }
+  nav.navbar form {
+    width: 350px;
+  }
+  /* ************ BOTON RESERVA DE PORTADA AFA. *************** */
+  .portada .btnafa {
+    position: relative;
+    bottom: 120px;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .portada .btnafa:hover {
+    background: linear-gradient(90deg, #879dd1 0%, #0043a7 100%);
+    color: white;
+  }
+  /* ************INFORMACION DE CUOTAS.******************* */
+  .info__extra {
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    position: relative;
+    bottom: 100px;
+    left: 0px;
+  }
+  /*  **************GALERIA NIKE.***************  */
+  /**
+    Setup for code demo only
+  */
+  :root {
+    --card-margin: 15px;
+    --carousel-height: 240px;
+  }
+  body {
+    margin: 10px;
+  }
+  /**
+    Container
+  */
+  .carousel {
+    position: relative;
+    width: calc(100% - 100px);
+    max-width: 700px;
+    margin-left: 50px;
+  }
+  /**
+    Controls (previous/next buttons)
+  */
+  .is-control {
+    background: 0;
+    border: 0;
+    padding: 0 10px;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 0.2s linear;
+  }
+  .is-control:hover {
+    color: rgb(0, 0, 0);
+  }
+  .is-control:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  .previous-button {
+    position: absolute;
+    left: -50px;
+    top: calc(var(--carousel-height) / 2 - 30px);
+  }
+  .next-button {
+    position: absolute;
+    right: -50px;
+    top: calc(var(--carousel-height) / 2 - 30px);
+  }
+  /**
+    Single card
+  */
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    transition: all 0.1s linear;
+  }
+  .slick-slide:not(:last-of-type) {
+    margin-right: var(--card-margin);
+  }
+  .card a {
+    text-decoration: none;
+  }
+  .card .image {
+    height: 100px;
+    padding: 2px;
+    overflow: hidden;
+  }
+  .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.5);
+  }
+  .card .title {
+    margin: 0;
+    padding: 10px 10px 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  .card .content {
+    padding: 0 10px 40px 10px;
+    transition: color 0.1s linear;
+  }
+  .card .content p {
+    margin: 7px 0;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  .card .content .price {
+    position: absolute;
+    bottom: 8px;
+  }
+  .card .content .price .new-price {
+    font-weight: bold;
+  }
+  .card .content .price .original-price {
+    margin-left: 5px;
+    font-size: 14px;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  /* Hover state = add box shadow, underline the title */
+  .card:hover {
+    border-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  }
+  .card:hover .image img,
+.card:focus .image img {
+    filter: grayscale(0);
+  }
+  .card:hover .title {
+    text-decoration: underline;
+  }
+  .card a:focus {
+    outline: none;
+  }
+  /* Focus state = turn text blue, add large blue outline */
+  /* NOTE: :focus-within is not supported in IE11 or Edge as of Jan 2020. To add support, use a polyfill such as https://github.com/matteobad/focus-within-polyfill */
+  .card:focus-within {
+    border-color: hsl(204deg, 86%, 53%);
+    box-shadow: 0 0 0 2px hsl(204deg, 86%, 53%);
+  }
+  .card:focus-within .title,
+.card:focus-within .content {
+    color: hsl(217deg, 71%, 53%);
+  }
+  .card:focus-within .title {
+    text-decoration: underline;
+  }
+  /** Credits at bottom */
+  .credits {
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
+  }
+  .credits img {
+    height: 30px;
+    margin-left: 5px;
+    margin-top: -2px;
+    vertical-align: middle;
+  }
+  .credits:hover,
+.credits:focus {
+    opacity: 1;
+  }
+  /*  **************SECCION OUTLET.***************  */
+  h1 {
+    padding: 2%;
+    text-align: center;
+  }
+  h1:hover {
+    transition: background-color 2s;
+    background-color: rgb(0, 108, 248);
+    color: #efefef;
+    font-weight: bolder;
+  }
+  div.GalleryB {
+    border: 1px solid rgba(0, 70, 150, 0.342);
+  }
+  div.GalleryB:hover {
+    font-weight: bolder;
+    border: 1.5px solid rgb(0, 0, 0);
+  }
+  div.GalleryB img {
+    width: 100%;
+    height: auto;
+  }
+  div.descB {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .OutResponsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  /******************PIE DE PAGINA******************/
+  .pie-pagina {
+    position: absolute;
+    top: 320%;
+    width: 100%;
+    background-color: rgb(0, 108, 248);
+  }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+  }
+  .pie-pagina .grupo-1 .box p {
+    text-align: start;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .red-social a {
+    display: inline;
+    padding: 20px;
+    justify-content: end;
+    text-decoration: none;
+    width: 70px;
+    height: 65px;
+    line-height: 45px;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    background-color: rgb(0, 108, 248);
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  .pie-pagina .grupo-2 {
+    background-color: rgb(0, 108, 248);
+    padding: 15px 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 20px;
+  }
+}
+/************ CUENTA REGRESIVA MUNDIAL ********************/
+p.mundial {
+  text-align: center;
+  font-size: 50px;
+  background: rgb(18, 114, 216);
+}
+
+.contenedor {
+  color: #000000;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 25%, rgba(228, 255, 0, 0.3729866947) 49%, rgb(255, 255, 255) 73%);
+  text-align: center;
+}
+
+.cartel {
+  width: 109px;
+  height: 109px;
+  padding: 10px 0px 5px 0px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+.cartel > div {
+  font-size: 50px;
+  animation: fade 3s;
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+.cartel > div > h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.h3 {
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.contenedor {
+  margin-top: 3%;
+}
+
+.contenido {
+  width: 80%;
+  margin: 0 auto;
+  border: 0px solid black;
+  z-index: 10;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.numeros {
+  font-size: 20px;
+  transition: 0.3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+.responsivo1 {
+  display: inline-block;
+}
+
+.responsivo2 {
+  display: inline-block;
+}
+
+.darkmode--activated p, .darkmode--activated li {
+  color: #000;
+}
+
+.button {
+  isolation: isolate;
+}
+
+.darkmode--activated .logo {
+  mix-blend-mode: difference;
+}
+
+a.btn {
+  background-color: rgb(0, 81, 255);
+}
+
+a.btn {
+  padding: 15px;
+  border: 1px;
+  border-radius: 20px;
+  font: 16px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

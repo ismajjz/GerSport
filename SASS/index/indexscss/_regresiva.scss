@@ -1,0 +1,70 @@
+/************ CUENTA REGRESIVA MUNDIAL ********************/
+p.mundial {
+    text-align: center;
+    font-size: 50px;
+    background: rgb(18, 114, 216);
+}
+
+.contenedor {
+    color: #000000;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(228,255,0,0.37298669467787116) 49%, rgba(255,255,255,1) 73%);
+    text-align: center;
+  }
+  .cartel {
+    width: 109px;
+    height: 109px;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+  }
+  .cartel>div{
+    font-size: 50px;
+    animation: fade 3s;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+  .cartel>div>h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .h3 {
+    bottom: 0;
+    margin: 0 auto ;
+  }
+  .contenedor {
+    margin-top: 3%;
+  }
+  .contenido {
+    width: 80%;
+    margin: 0 auto;
+    border: 0px solid black;
+    z-index: 10;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+  }
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  .numeros {
+    font-size: 20px;
+    transition: .3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  .responsivo1 {
+    display: inline-block
+  }
+  .responsivo2 {
+    display: inline-block
+  }
+ 

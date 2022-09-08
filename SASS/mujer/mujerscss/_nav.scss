@@ -1,0 +1,20 @@
+/*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+div.container-fluid {
+    background-color: $color-general-pagina;
+}
+
+nav.navbar ul li a {
+    font-size: 20px;
+    margin: 30px;
+    color: $color-fuente-navfooter;
+    font-weight: $formato-texto;
+}
+
+nav.navbar ul li a:hover {
+    border-radius: 15px;
+    background: $color-botones;
+}
+
+nav.navbar form {
+    width: 350px
+}

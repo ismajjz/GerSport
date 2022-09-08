@@ -1,0 +1,37 @@
+
+/* ************ BOTON RESERVA DE PORTADA AFA. *************** */
+.portada .botonafa {
+    position: relative;
+    bottom: 120px;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: $formato-texto;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .portada .botonafa:hover {
+    transition: 2s;
+    background: $color-botones;
+    color: white;
+  }
+
+  /* ************INFORMACION DE CUOTAS.******************* */
+.info__extra {
+    font-weight: $formato-texto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    position: relative;
+    bottom: 100px;
+    left: 0px;
+
+}

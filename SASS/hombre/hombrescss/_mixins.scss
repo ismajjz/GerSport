@@ -1,0 +1,22 @@
+@mixin galeriasmix ($fondo) { 
+    align-items: flex-start;
+    background-color: $fondo;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.seccion-babuchas {
+    @include galeriasmix(#111);
+}
+
+.seccion-buzo {
+    @include galeriasmix(#3333);
+}
+
+.seccion-chombas {
+    @include galeriasmix(#111);
+}
+.seccion-camperas {
+    @include galeriasmix(#333);
+}

@@ -1,0 +1,8 @@
+ /*Galeria buzo*/
+ .seccion-buzo{
+    align-items: flex-start;
+    background-color: $fondo-galeria2;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }

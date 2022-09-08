@@ -1,0 +1,65 @@
+.grid {
+  background-color: rgb(255, 180, 192);
+  border-color: rgb(78, 78, 78);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  align-items: stretch;
+  margin: 10px;
+}
+
+.grid > article {
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid .text h3 {
+  font-size: 1.4rem;
+}
+
+.grid .text p {
+  font-size: 0.9rem;
+}
+
+.grid .text p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+p.encabezado {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 3%;
+}
+
+a.btn {
+  display: inline-block;
+  background-color: rgb(255, 131, 152);
+  border-color: rgb(46, 46, 46);
+}
+
+a.btn:hover {
+  background-color: rgb(255, 72, 102);
+  border-color: black;
+}
+
+a.btn::before {
+  background-color: rgb(59, 59, 59);
+  border-color: black;
+}
+
+a.btn:after {
+  background-color: rgb(59, 59, 59);
+  border-color: black;
+}

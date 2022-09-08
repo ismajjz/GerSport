@@ -1,0 +1,50 @@
+/*GRILLA MOBILE */
+@media screen  and (min-width: 50px) and (max-width: 768px) and  (orientation:portrait) {
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "nav nav nav"
+        "babuchas babuchas babuchas"
+        "calzas calzas calzas"
+        "camperas camperas camperas"
+        "buzos buzos buzos"
+        "footer footer footer";
+    }
+   /*navbar*/
+   
+   nav.navbar {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    flex-wrap: wrap;
+    
+   }
+   
+   nav.navbar ul li a {
+    color: #000000;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+   }
+   
+   
+   
+   /*galeria marcas*/
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+   
+   
+   /*FOOTER*/
+   .pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
+   }
+   .pie-pagina .grupo-2 small{
+   font-size: 15px;
+   }
+   }
