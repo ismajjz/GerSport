@@ -1,0 +1,40 @@
+/*GRILLA MOBILE */
+@media screen and (min-width: 50px) and (max-width: 768px) and (orientation: portrait) {
+	#grilla {
+	  display: grid;
+	  grid-template-areas: "nav nav nav" "form form form" "footer footer footer";
+	}
+	.form_wrapper {
+		.col_half {
+			width: 100%;
+			float: none;
+		}
+	}
+	.bottom_row {
+		.col_half {
+			width: 50%;
+			float: left;
+		}
+	}
+	.form_container {
+		.row {
+			.col_half.last {
+				border-left: none;
+			}
+		}
+	}
+	.remember_me {
+		padding-bottom: 20px;
+	}
+
+  /*FOOTER*/
+  .pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
+  }
+  .pie-pagina .grupo-2 small{
+  font-size: 15px;
+  }
+  }

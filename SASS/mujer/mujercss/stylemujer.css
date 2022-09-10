@@ -61,8 +61,8 @@ nav.navbar form {
   font-size: 1.4rem;
 }
 
-.grid .text p {
-  font-size: 0.9rem;
+.grid .text p.preciomujer {
+  font-size: 1.5rem;
 }
 
 .grid .text p a {
@@ -184,6 +184,22 @@ a.btn:after {
     font-weight: bold;
   }
   /*galeria marcas*/
+  a.btn {
+    width: 80px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 8px;
+    color: #000000;
+  }
+  p.infomujer {
+    display: none;
+  }
+  p.preciomujer {
+    font-size: 20px;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }

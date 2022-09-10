@@ -1,4 +1,11 @@
 /*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+button.navbar-toggler {
+    display: flex;
+    position: absolute;
+    right: 10%;
+}
+
+
 div.container-fluid {
     background-color: $color-general-pagina;
 }

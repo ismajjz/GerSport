@@ -1,0 +1,19 @@
+/*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+
+
+nav.navbar ul li a {
+    font-size: 20px;
+    margin: 30px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+nav.navbar ul li a:hover {
+    border-radius: 15px;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+nav.navbar form {
+    width: 350px
+}
+

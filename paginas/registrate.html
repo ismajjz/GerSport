@@ -8,7 +8,7 @@
     patines, raquetas.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/paginas/registrate.css">
+    <link rel="stylesheet" href="../SASS/registrate/registratecss/styleregistrate.css">
       <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,57 +69,70 @@
         </nav>
   
 <!-- ****************Formulario**************** -->
-    <h1 class="datos">Ingresa tus datos</h1>
-    <form class="formulario">
-        <br />
-        <label for="Nombre">Nombre</label>
-        <br />
-        <input class="boton" id="Nombre"type="text" placeholder="Ingrese su nombre/s">
-        <br />
-        <label for="Apellido">Apellido</label>
-        <br />
-        <input class="boton" id="Apellido" type="text" placeholder="Ingrese su Apellido">
-        <br />
-        <label for="Ingrese su Correo">Correo Electronico:</label>
-        <br />
-        <input class="boton" id="email" type="email" placeholder="Ingrese su E-mail">
-        <br />
-        <label for="Usuario">Usuario:</label>
-        <br />
-        <input class="boton" id="usuario" type="text" placeholder="ingrese un nombre de usuario">
-        <br />
-        <label for="Contraseña">Cotraseña</label>
-        <br />
-        <input class="boton" id="contraseña" type="password" placeholder="Contraseña">
-        <br />
-        <br />
-        <label>Nacionalidad</label>
-        <br />
-        <select class="boton">
-            <option>Argentina</option>
-            <option>Brasil</option>
-            <option>Chile</option>
-            <option>Uruguay</option>
-            <option>Paraguay</option>
-            <option>Otro</option>
-        </select>
-        <br />
-        <br />
-        <label>Domicilio</label>
-        <br />
-        <input class="boton" type="text" placeholder="Domicilio">
-        <br />
-        <label>Altura</label>
-        <br />
-        <input class="boton" type="text" placeholder="Altura">
-        <br />
-        <br />
-        <input class="boton" type=checkbox name="aceptar">Aceptar terminos y condiciones.
-        <br />
-        <br />
-        <button class="boton" type="submit">Enviar</button>
-        <button class="boton" type="reset">Restablecer</button>
-    </form>
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Registrarse</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Contraseña" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Repetir cotraseña" required />
+          </div>
+          <div class="row clearfix">
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Nombre completo" />
+              </div>
+            </div>
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Apellido" required />
+              </div>
+            </div>
+          </div>
+            	<div class="input_field radio_option">
+              <input type="radio" name="radiogroup1" id="rd1">
+              <label for="rd1">Masculino</label>
+              <input type="radio" name="radiogroup1" id="rd2">
+              <label for="rd2">Femenino</label>
+              </div>
+              <div class="input_field select_option">
+                <select>
+                  <option>Localidad</option>
+                  <option>Argentina</option>
+                  <option>Uruguay</option>
+                  <option>Paraguay</option>
+                  <option>Chile</option>
+                  <option>Brasil</option>
+                  <option>Perú</option>
+                  <option>Bolivia</option>
+                  <option>Otro...</option>
+                </select>
+                <div class="select_arrow"></div>
+              </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb1">
+    			<label for="cb1">Acepto los terminos y condiciones.</label>
+            </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb2">
+    			<label for="cb2">Quiero recibir novedades.</label>
+            </div>
+          <input class="button" type="submit" value="Registrarse" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="credit">Seguienos en nuestro <a href="http://www.instagram.com/_Gerport1" target="_blank">Instagram</a></p>
         <hr />
     <!--******************PIE DE PAGINAS****************-->
     <footer class="pie-pagina">
@@ -151,7 +164,17 @@
   </footer>
   </div>
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!--Modo oscuro/Claro -->
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
 </body>
 
 </html>

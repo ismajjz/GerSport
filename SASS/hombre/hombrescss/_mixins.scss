@@ -7,16 +7,14 @@
 }
 
 .seccion-babuchas {
-    @include galeriasmix(#111);
+    @include galeriasmix(rgb(214, 214, 214));
 }
-
 .seccion-buzo {
-    @include galeriasmix(#3333);
+    @include galeriasmix(rgb(153, 153, 153));
 }
-
 .seccion-chombas {
-    @include galeriasmix(#111);
+    @include galeriasmix(rgb(214, 214, 214));
 }
 .seccion-camperas {
-    @include galeriasmix(#333);
+    @include galeriasmix(rgb(153, 153, 153));
 }

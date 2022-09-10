@@ -10,25 +10,25 @@
         "footer footer footer";
     }
 
-/*NAVBAR*/
-
-
+/*navbar*/
+  
 nav.navbar {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 1;
-    display: flex;
-    flex-wrap: wrap;
-    
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 1;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 nav.navbar ul li a {
-    color: #000000;
-    margin: 0px;
-    font-size: 12px;
-    font-weight: bold;
+  color: #000000;
+  margin: 0px;
+  font-size: 12px;
+  font-weight: bold;
 }
+
 
 
 /*PORTADA AFA*/
@@ -48,7 +48,7 @@ div.portada h4.info__extra {
 /*NIKE*/
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     grid-gap: 30px;
     align-items: stretch;
   }
@@ -60,6 +60,11 @@ div.portada h4.info__extra {
   
   .grid > article img {
     max-width: 100%;
+  }
+  
+
+  p.maininfo {
+    display: none;
   }
   
 /*OUTLET*/
@@ -77,6 +82,7 @@ div.portada h4.info__extra {
 }
 .pie-pagina .grupo-2 small{
   font-size: 15px;
+  
 }
 
 }

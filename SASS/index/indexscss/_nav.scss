@@ -1,19 +1,27 @@
 /*::::::::::::::::::::::::NAV::::::::::::::::::::::::*/
+button.navbar-toggler {
+    display: flex;
+    position: absolute;
+    right: 10%;
+}
+
+
 div.container-fluid {
-    background-color: $color-general-pagina;
-}
-
-nav.navbar ul li a {
+    background-color: rgb(0, 108, 248);
+  }
+  
+  nav.navbar ul li a {
     font-size: 20px;
-    color: $color-fuente-navfooter;
-    font-weight: $formato-texto;
-}
-
-nav.navbar ul li a:hover {
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+  
+  nav.navbar ul li a:hover {
     border-radius: 15px;
-    background: $color-botones;
-}
-
-nav.navbar form {
-    width: 350px
-}
+    background: linear-gradient(90deg, #8a9ecc 0%, #0043a7 100%);
+  }
+  
+  nav.navbar form {
+    width: 350px;
+  }

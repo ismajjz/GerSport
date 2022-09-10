@@ -114,19 +114,10 @@ nav.navbar form {
   word-spacing: 100vw;
 }
 
-/*Galeria babuchas*/
-.seccion-babuchas {
-  align-items: flex-start;
-  background-color: rgba(24, 24, 24, 0.8156862745);
-  display: flex;
-  justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
-}
-
 /*Galeria buzo*/
 .seccion-buzo {
   align-items: flex-start;
-  background-color: #0D6EFD;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
@@ -135,7 +126,7 @@ nav.navbar form {
 /*Galeria chombas*/
 .seccion-chombas {
   align-items: flex-start;
-  background-color: rgba(24, 24, 24, 0.8156862745);
+  background-color: rgba(255, 255, 255, 0.8156862745);
   display: flex;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
@@ -144,7 +135,7 @@ nav.navbar form {
 /*Galeria camperas*/
 .seccion-camperas {
   align-items: flex-start;
-  background-color: #0D6EFD;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
@@ -153,7 +144,7 @@ nav.navbar form {
 /*Galeria babuchas*/
 .seccion-babuchas {
   align-items: flex-start;
-  background-color: rgba(255, 0, 0, 0.8156862745);
+  background-color: rgba(255, 255, 255, 0.8156862745);
   display: flex;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
@@ -245,6 +236,11 @@ nav.navbar form {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  p.info__img {
+    position: relative;
+    top: 70px;
+    font-size: 10px;
+  }
   /*FOOTER*/
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -263,7 +259,7 @@ nav.navbar form {
 }
 .seccion-babuchas {
   align-items: flex-start;
-  background-color: #111;
+  background-color: rgb(214, 214, 214);
   display: flex;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
@@ -271,7 +267,7 @@ nav.navbar form {
 
 .seccion-buzo {
   align-items: flex-start;
-  background-color: rgba(51, 51, 51, 0.2);
+  background-color: rgb(153, 153, 153);
   display: flex;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
@@ -279,7 +275,7 @@ nav.navbar form {
 
 .seccion-chombas {
   align-items: flex-start;
-  background-color: #111;
+  background-color: rgb(214, 214, 214);
   display: flex;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
@@ -287,7 +283,7 @@ nav.navbar form {
 
 .seccion-camperas {
   align-items: flex-start;
-  background-color: #333;
+  background-color: rgb(153, 153, 153);
   display: flex;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
