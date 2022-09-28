@@ -218,6 +218,7 @@ a.btn:after {
     font-weight: bold;
   }
   /*galeria marcas*/
+  /*galeria marcas*/
   a.btn {
     width: 80px;
     height: 30px;
@@ -225,10 +226,10 @@ a.btn:after {
     font-size: 8px;
     color: #000000;
   }
-  p.infomujer {
+  p.infohombre {
     display: none;
   }
-  p.preciomujer {
+  p.preciohombre {
     font-size: 20px;
   }
   .grid {
